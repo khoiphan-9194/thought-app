@@ -9,11 +9,11 @@ export default defineConfig({
     outDir: 'dist'
   },
   server: {
-    port: 3000,
+    port: 4000,
     open: true,
     proxy: {
       '/graphql': {
-        target: 'http://localhost:3001',
+        target: 'http://localhost:4001',
         secure: false,
         changeOrigin: true
       }
